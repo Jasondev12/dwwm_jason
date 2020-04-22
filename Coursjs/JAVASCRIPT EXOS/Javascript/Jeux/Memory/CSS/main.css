@@ -1,0 +1,89 @@
+
+/* ============================================================================= Général */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    cursor: url(../ressources/images/cursor2.png) 4 12, auto;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+img {
+    width: 100%;
+    margin: 0.5vh;
+    cursor: url(../ressources/images/cursor.png) 4 12, pointer;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+img:active{
+    transform: scale(1.2);
+}
+
+/* ============================================================================= Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    background: crimson;
+    padding: 2vh;
+}
+
+nav {
+    display: flex;
+    padding: 2vh;
+    background: black;
+}
+
+.navEspace {
+    flex: 2;
+}
+
+#navClick,
+#navFound,
+#navTime {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+/* ============================================================================= Tableau */
+
+#tableau {
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ligne {
+    display: flex;
+}
+
+/* ============================================================================= Boutons */
+
+#listeBoutons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    padding: 2vh;
+    min-width: 150px;
+    background: crimson;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: url(../ressources/images/cursor.png) 4 12, pointer;
+}
+
+button:hover {
+    border : 1px solid black;
+}

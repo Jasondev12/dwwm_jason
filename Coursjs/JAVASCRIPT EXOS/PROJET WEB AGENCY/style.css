@@ -1,0 +1,533 @@
+/* GENERAL */
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+
+.topnav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0.1px 0.1px #4494BB;
+    border-bottom: 1px solid #FFFFFF;
+    z-index: 3;
+}
+
+#logo {
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 50%;
+}
+
+nav {
+    margin-right: 15%;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav a {
+    color: #8c8c8c;
+    font-size: 1em;
+    padding: 39px 25px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #636363;
+    border-top: 2px solid #5CADD3;
+}
+
+/* SLIDER */
+
+#accueil {
+    overflow: hidden;
+    padding-top: 100px;
+    width: 100%;
+}
+
+/* MANUAL SLIDER */
+
+.manual-slider {
+    width: 200%;
+    height: 100%;
+    display: none;
+    position: relative;
+}
+
+.manual-slider img {
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+}
+
+/* BUTTON MANUAL SLIDER */
+
+.button-left {
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 70px;
+    background-color: rgba(50, 50, 50, 0.7);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: 2;
+    color: white;
+    transition: 0.6s ease;
+}
+
+.button-right {
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 70px;
+    background-color: rgba(50, 50, 50, 0.7);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: 2;
+    color: white;
+    transition: 0.6s ease;
+}
+
+#accueil .button-left {
+    margin: 14% auto;
+    position: absolute;
+    display: inline-block;
+}
+
+#accueil .button-right {
+    margin: 14% auto;
+    position: absolute;
+    display: inline-block;
+}
+
+.button-left:hover,
+.button-right:hover {
+    background-color: rgba(16, 19, 16, 0.9);
+}
+
+.button-right {
+    color: white;
+    transition: 0.6s ease;
+    right: 0px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+label i {
+    cursor: pointer;
+    position: absolute;
+    top: 26.50px;
+    left: 9px;
+    font-size: 17px;
+}
+
+.button-left i {}
+
+.button-right i {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    left: 8px;
+}
+
+.slider-change {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    bottom: 0px;
+    display: none;
+}
+
+#slider-1:checked ~ .manual-slider {
+    display: flex;
+    left: -100%;
+}
+
+#slider-1:checked ~ .automatic-slider {
+    display: none;
+}
+
+#slider-1:checked ~ #timeline {
+    bottom: 8%;
+}
+
+/* AUTO SLIDER */
+
+.automatic-slider {
+    width: 200%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.automatic-slider img {
+    height: 100%;
+    width: 50%;
+}
+
+/* KEYFRAMES SLIDER AUTO */
+
+@keyframes automatic-slider {
+
+    0%,
+    45%,
+    100% {
+        left: 0
+    }
+
+    50%,
+    95% {
+        left: -100%
+    }
+}
+
+.automatic-slider {
+    animation: 15s automatic-slider infinite;
+}
+
+/* KEYFRAMES TIMELINE */
+
+@keyframes timeliner {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    45%,
+    90% {
+        width: 100%;
+    }
+}
+
+#timeline {
+    margin-top: 0px;
+    width: 100%;
+    z-index: 6;
+    height: 3px;
+    background: #5cadd3;
+    animation: timeliner 15s infinite;
+    animation-direction: normal;
+}
+
+/* STYLE TEXTE ACCUEIL */
+
+.text-webagency {
+    position: absolute;
+    top: 33%;
+    left: 150px;
+    color: #ddd;
+    z-index: 2;
+}
+
+.text-webagency h1 {
+    margin-top: 0px;
+    font-size: 26px;
+}
+
+.text-webagency p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 11px;
+}
+
+.blue {
+    color: #5cadd3;
+}
+
+.button-info1 {
+    outline: 0;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    background-color: #5cadd3;
+    box-shadow: 0px 3px 0px #4494bb;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.button-info1 a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    top: 14px;
+}
+
+
+.text-webagency-2 {
+    position: absolute;
+    margin-left: 150px;
+    top: 33%;
+    left: 50%;
+    color: #ddd;
+    z-index: 2;
+}
+
+.text-webagency-2 h1 {
+    margin-top: 0px;
+    font-size: 26px;
+}
+
+.text-webagency-2 p {
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-info2 {
+    outline: 0;
+    border-radius: 5px;
+    width: 125px;
+    height: 45px;
+    background-color: #5cadd3;
+    box-shadow: 0px 3px 0px #4494bb;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button-info2 a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    top: 14px;
+}
+
+/* FOOTER SLIDER */
+
+#footer-slider {
+    width: 100%;
+    height: 75px;
+    background-color: #fefefe;
+}
+
+/* SECTION SERVICES */
+
+h2 {
+    text-align: center;
+    margin-top: 23px;
+    font-size: 31px;
+}
+
+.en-tete p {
+    text-align: center;
+}
+
+.point-separateur {
+    background: #5cadd3;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.trait-gauche {
+    background: #ebebeb;
+    width: 58px;
+    height: 1px;
+}
+
+.trait-droit {
+    background: #ebebeb;
+    width: 58px;
+    height: 1px;
+}
+
+.separateur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 8.75em;
+    margin: 1em auto;
+}
+
+.imac-texte {
+    height: 100%;
+
+}
+
+#photo-imac {
+    width: 50%;
+    float: left;
+    padding-top: 53px;
+}
+
+#nos-services {
+    width: 50%;
+    display: table-cell;
+    padding-top: 125px;
+}
+
+.liste-services {
+    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.texte-services {
+    margin-left: 30px;
+}
+
+.texte-services p {
+    margin-top: 14px;
+    margin-bottom: 45px;
+
+}
+
+#logo-ux {
+    margin-top: -40px;
+}
+
+#logo-ui {
+    margin-top: -40px;
+}
+
+#logo-seo {
+    margin-top: -40px;
+}
+
+/* ICONES SERVICES */
+
+.fa-chart-line,
+.fa-cubes,
+.fa-chart-pie {
+    font-size: 1.5em;
+    color: #5cadd3;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    padding: 20px 20px 20px 20px;
+}
+
+.point-logo {
+    top: 45px;
+    right: -32px;
+    width: 12px;
+    height: 12px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #5cadd3;
+    border: 4px solid white;
+    position: relative;
+}
+
+.alignCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ensembleBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+ #projets button:checked {
+    background-color: #5cadd3;
+    color: white;
+    border-bottom: 3px solid #468cad;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.boutonGauche{
+    background-color: #d7d7d7;
+    padding: 1em;
+    border-radius: 10px 0px 0px 10px; 
+}
+.boutonCenter{
+    background-color: #d7d7d7;
+    padding: 1em;
+
+}
+.boutonDroite{
+    background-color: #d7d7d7;
+    border-radius: 0px 10px 10px 0px;
+    padding: 1em;
+}
+
+.boutonGauche:hover, .boutonCenter:hover, .boutonDroite:hover{
+    background-color: #5CADD3;
+    border-bottom: 3px solid #498CAB;
+}
+
+#ensembleImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ensemble4Img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#projets{
+    margin-bottom: 5vh;
+}
+
+.imgProjets{
+    width: 23vw;
+    margin: 0 10px 0 10px;
+}
+
+.ensemble4Img2{
+    display:inline-flex; 
+}
+
+.googleMap iframe{
+    width: 100vw;
+}

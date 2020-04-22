@@ -1,0 +1,159 @@
+
+/* ============================================================= Joueur */
+#player {
+    top: 50vh;
+    left: 30vw;
+}
+
+/* ============================================================= Obstacles */
+
+.line1 {
+    top: 6vh;
+    left: 0;
+    width: 40vw;
+    height: 20vh;
+}
+
+.line2 {
+    top: 80vh;
+    left: 0;
+    width: 40vw;
+    height: 20vh; 
+}
+
+.line3 {
+    top: 40vh;
+    left: 35vw;
+    width: 5vw;
+    height: 25vh;
+}
+
+.line4 {
+    top: 40vh;
+    left: 6vw;
+    width: 30vw;
+    height: 5vh;
+}
+
+.line5 {
+    top: 60vh;
+    left: 6vw;
+    width: 30vw;
+    height: 5vh;
+}
+
+.line6 {
+    top: 16vh;
+    left: 45vw;
+    width: 20vw;
+    height: 76vh;
+}
+
+.line7 {
+    top: 20vh;
+    left: 64vw;
+    width: 35vw;
+    height: 5vh;
+}
+
+.line8 {
+    top: 34vh;
+    left: 71vw;
+    width: 5vw;
+    height: 66vh;
+}
+
+.line9 {
+    top: 24vh;
+    left: 81vw;
+    width: 5vw;
+    height: 66vh;
+}
+
+.line10 {
+    top: 34vh;
+    left: 91vw;
+    width: 8vw;
+    height: 66vh;
+}
+
+.line11,
+.line12,
+.line13,
+.line14 {
+    display: none;
+}
+
+.square1 {
+    top: 7vh;
+    left: 70vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.square2 {
+    top: 14vh;
+    left: 77vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.square3 {
+    top: 7vh;
+    left: 84vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.square4 {
+    top: 14vh;
+    left: 91vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.square5 {
+    top: 45vh;
+    left: 25vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.square6 {
+    top: 54vh;
+    left: 18vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.square7 {
+    top: 45vh;
+    left: 11vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.square8 {
+    top: 26vh;
+    left: 38vw;
+    width: 2vw;
+    height: 6vh;
+}
+
+.square9 {
+    top: 73vh;
+    left: 38vw;
+    width: 2vw;
+    height: 7vh;
+}
+
+.square10 {
+    display: none;
+}
+
+.arrival {
+    top: 7vh;
+    left: 98vw;
+    width: 2vw;
+    height: 93vh;
+}

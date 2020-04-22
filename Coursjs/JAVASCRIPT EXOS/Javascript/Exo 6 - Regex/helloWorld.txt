@@ -1,0 +1,20 @@
+01 - Nom de famille en majuscule, espaces, tirets et majuscules accentuées acceptées
+^([A-ZÀ-Ý -]){2,}[^*x]$
+
+02 - Prénom, 1ère lettre en majuscule, le reste en minuscule, tiret, espace
+^[A-ZÀ-Ý]{1}[a-zà-ý '-]*([ |-][A-ZÀ-Ý]{1}[a-zà-ý '-]*)?$
+
+03 - Code postal
+^\d{5}$
+
+04 - Numéro de téléphone français simple
+^0[1-9]([-. ]?[\d]{2}){4}$
+
+05 - Numéro de téléphone français complexe
+^(0|(\+33[-. ]?))[1-9]([-. ]?[\d]{2}){4}$
+
+06 - Adresse mail
+^[a-zA-Z0-9-._]{2,}@[a-zA-Z0-9-]{2,}\.[a-z]{2,}(.[a-z]{2,})?$
+
+07 - Mot de passe (1 minuscule, 1 majuscule, 1 caractère spécial, 8 caractères minimums)
+^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#\$%\^&\*+])[a-zA-Z\d!@#\$%\^&\*+]{8,}$

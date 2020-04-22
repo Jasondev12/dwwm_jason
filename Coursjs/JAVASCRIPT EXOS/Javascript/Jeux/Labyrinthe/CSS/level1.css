@@ -1,0 +1,183 @@
+
+/* ============================================================= Joueur */
+#player {
+    top: 8vh;
+    left: 0.5vw;
+}
+
+/* ============================================================= Obstacles */
+
+.line1 {
+    top: 6vh;
+    left: 5vw;
+    width: 3vw; 
+    height: 50vh;
+}
+
+.line2 {
+    top: 66vh;
+    left: 5vw;
+    width: 3vw; 
+    height: 25vh;
+}
+
+.line3 {
+    top: 66vh;
+    left: 5vw;
+    width: 36vw; 
+    height: 5vh;
+}
+
+.line4 {
+    top: 16vh;
+    left: 13vw;
+    width: 3vw; 
+    height: 55vh;
+}
+
+.line5 {
+    top: 80vh;
+    left: 13vw;
+    width: 3vw; 
+    height: 20vh;
+}
+
+.line6 {
+    top: 70vh;
+    left: 21vw;
+    width: 3vw; 
+    height: 20vh;
+}
+
+.line7 {
+    top: 80vh;
+    left: 29.5vw;
+    width: 3vw; 
+    height: 20vh;
+}
+
+.line8 {
+    top: 70vh;
+    left: 38vw;
+    width: 3vw; 
+    height: 20vh;
+}
+
+.line9 {
+    top: 6vh;
+    left: 38vw;
+    width: 12vw; 
+    height: 51vh;
+}
+
+.line10 {
+    top: 52vh;
+    left: 30vw;
+    width: 20vw; 
+    height: 5vh;
+}
+
+.line11 {
+    top: 66vh;
+    left: 47vw;
+    width: 53vw; 
+    height: 34vh;
+}
+
+.line12 {
+    top: 6vh;
+    left: 45vw;
+    width: 50vw; 
+    height: 34vh;
+}
+
+.line13 {
+    top: 39vh;
+    left: 90vw;
+    width: 5vw;
+    height: 18vh;
+}
+
+.line14 {
+    top: 49vh;
+    left: 55vw;
+    width: 15vw; 
+    height: 20vh;
+}
+
+.square1 {
+    top: 10vh;
+    left: 23vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square2 {
+    top: 26vh;
+    left: 17vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square3 {
+    top: 30vh;
+    left: 24vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square4 {
+    top: 14vh;
+    left: 31vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square5 {
+    top: 36vh;
+    left: 29vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square6 {
+    top: 51vh;
+    left: 25.5vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square7 {
+    top: 42vh;
+    left: 18vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square8 {
+    top: 52vh;
+    left: 86vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square9 {
+    top: 44vh;
+    left: 75vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.square10 {
+    top: 58vh;
+    left: 78vw;
+    width: 3vw;
+    height: 3vw
+}
+
+.arrival {
+    top: 7vh;
+    left: 95vw;
+    width: 5vw;
+    height: 1vw;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jeu du labyrinthe</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/level1.css">
+</head>
+
+<body>
+    <div id="player">&nbsp;</div>
+    
+    <div class="obstacle black separation">&nbsp;</div>
+
+    <div class="obstacle black line1">&nbsp;</div>
+    <div class="obstacle black line2">&nbsp;</div>
+    <div class="obstacle black line3">&nbsp;</div>
+    <div class="obstacle black line4">&nbsp;</div>
+    <div class="obstacle black line5">&nbsp;</div>
+    <div class="obstacle black line6">&nbsp;</div>
+    <div class="obstacle black line7">&nbsp;</div>
+    <div class="obstacle black line8">&nbsp;</div>
+    <div class="obstacle black line9">&nbsp;</div>
+    <div class="obstacle black line10">&nbsp;</div>
+    <div class="obstacle black line11">&nbsp;</div>
+    <div class="obstacle black line12">&nbsp;</div>
+    <div class="obstacle black line13">&nbsp;</div>
+    <div class="obstacle black line14">&nbsp;</div>
+
+    <div class="obstacle red square1">&nbsp;</div>
+    <div class="obstacle red square2">&nbsp;</div>
+    <div class="obstacle red square3">&nbsp;</div>
+    <div class="obstacle red square4">&nbsp;</div>
+    <div class="obstacle red square5">&nbsp;</div>
+    <div class="obstacle red square6">&nbsp;</div>
+    <div class="obstacle red square7">&nbsp;</div>
+
+    <div class="obstacle blue square8">&nbsp;</div>
+    <div class="obstacle blue square9">&nbsp;</div>
+    <div class="obstacle blue square10">&nbsp;</div>
+
+    <div class="obstacle green arrival">&nbsp;</div>
+
+    <div id="espaceHaut">
+        <div id="time">
+            <select id="level">
+                <option value="1" SELECTED>Niveau 1</option>
+                <option value="2">Niveau 2</option>
+            </select>
+            <button id="play">Commencer à jouer</button>
+        </div>
+        <div id="boutonRules">
+            <button id="controls">Comment jouer ?</button>
+            <button id="rules">Quel est le but ?</button>
+        </div>
+        <div id="boutonMusic">
+            <button id="musicOn">Jouer la musique</button>
+            <button id="musicOff">Arrêter la musique</button>
+        </div>
+    </div>
+
+    <audio id="music">
+        <source src="ressources/sounds/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="soundCollision">
+        <source src="ressources/sounds/bing.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="soundLimit">
+        <source src="ressources/sounds/boing.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

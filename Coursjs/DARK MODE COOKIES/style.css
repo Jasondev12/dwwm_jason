@@ -1,0 +1,28 @@
+  html, body {
+    font-family: sans-serif;
+    min-width: 2vw;
+  }
+  
+  button {
+    border: 1px;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+  
+  .dark {
+    background-color: #112F41;
+    color: #ffffff;
+  }
+  
+  .dark button {
+    background: #144098;
+    color: #fff;
+  }
+
+  .container, .containerButton{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }

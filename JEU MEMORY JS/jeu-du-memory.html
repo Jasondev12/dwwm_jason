@@ -1,0 +1,72 @@
+﻿<html >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Le Jeu du Memory en Javascript</title>
+<meta name="description" content="Jeu du Memory : Reconstruire les paires d'images identiques jusqu'à la dernière" />
+<meta http-equiv="content-language" content="fr" />
+<link href='styles/style.css' rel='stylesheet' type='text/css' />
+</head>
+<body>	
+			<div class="div_saut_ligne_top">
+			</div>						
+			<div style="float:left;width:10%;height:40px;"></div>
+			<div style="float:left;width:80%;height:40px;text-align:center;">
+			<div style="width:auto;display:block;height:auto;text-align:center;background-color:#ccccff;border:#7030a0 1px solid;padding-top:12px;box-shadow: 6px 6px 0px #aaa;color:#7030a0;">
+			<h1>Memory : Retrouver les paires d'images identiques</h1>
+			</div>
+			</div>
+					
+			<div style="float:left;width:10%;height:40px;"></div>
+			
+			<div class="div_saut_ligne">
+			</div>		
+			
+			<div style="width:100%;height:auto;text-align:center;">
+						
+			<div style="width:800px;display:inline-block;" id="conteneur">
+			
+				<div class="centre">
+					<div class="titre_centre" id="titre" style="text-align:center;padding-left:10px;">
+					Cliquez sur les cases pour trouver les correspondances.
+					</div>	
+				</div>
+			
+				<div class="colonne" id="liste">
+					<div id="grille">
+					<div class="case" id="case0"></div>
+					<div class="case" id="case1"></div>
+					<div class="case" id="case2"></div>
+					<div class="case" id="case3"></div>
+					
+					<div class="case" id="case4"></div>
+					<div class="case" id="case5"></div>
+					<div class="case" id="case6"></div>
+					<div class="case" id="case7"></div>
+					
+					<div class="case" id="case8"></div>
+					<div class="case" id="case9"></div>
+					<div class="case" id="case10"></div>
+					<div class="case" id="case11"></div>
+					
+					<div class="case" id="case12"></div>
+					<div class="case" id="case13"></div>
+					<div class="case" id="case14"></div>
+					<div class="case" id="case15"></div>
+					</div>
+					Vous avez trois minutes,<br />soit <span style="color:#CC3300;">180 secondes :</span><br /><br /><br />
+					<span style="font-size:18px;font-weight:normal;">Votre score :<br />
+					<div id="score" style="font-size:30px;"><strong>10</strong>/10</div>
+					<br /><br />
+					<div id="temps" style="font-size:20px;"></div><br />
+					<div id="perdu" style="font-size:20px;"></div><br />
+					<input type="button" id="input_btn" class="btn" value="Nouvelle partie"/>
+					</span>
+				</div>			
+			</div>		
+			</div>		
+			</div>
+	
+			<script src="javascript/memory.js"></script>
+</body>
+</html>
+	
