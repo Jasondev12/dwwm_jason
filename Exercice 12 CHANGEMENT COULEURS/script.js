@@ -15,7 +15,7 @@ var couleurs = readCookie("couleurActuelle");
 if(couleurs != null)
 {
     //récupération des couleurs pour les stockers dans des tableaux
-    tabCouleurs = couleurs.split(","); 
+    tabCouleurs = couleurs.split(", "); 
     changeCouleur(tabCouleurs[0], tabCouleurs[1], tabCouleurs[3]);
 }
 
