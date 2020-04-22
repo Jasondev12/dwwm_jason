@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Objet Navigator - Exemples</title>
+</head>
+<body>
+<script type="text/JavaScript" language="JavaScript">
+var version = navigator.appVersion;
+alert("Le code name de votre browser est :" +
+
+navigator.appCodeName);
+
+alert("Le nom ou la marque du browser est :" +
+
+navigator.appName);
+
+alert("Les informations sur la version sont :" + version);
+alert("Le browser a comme user-agent :" +
+
+navigator.userAgent);
+alert("");
+if (version.indexOf('Win') > -1) {
+alert("<br />Vous etes sous l'environnement Windows");
+alert("<br />");
+}
+if (navigator.userAgent.indexOf('Firefox') > -1) {
+alert("Vous utilisez un navigateur FireFox");
+} else if (version.indexOf('Chrome') > -1) {
+alert("Vous utilisez un navigateur Chrome");
+} else if (version.indexOf('MSIE') > -1) {
+alert("Vous utilisez un navigateur Microsoft InternetExplorer");
+
+} else {
+alert("Vous utilisez un navigateur inconnu");
+}
+</script>
+</body>
+</html>
