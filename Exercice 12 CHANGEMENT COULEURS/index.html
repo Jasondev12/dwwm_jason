@@ -3,19 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="dark.css" rel="stylesheet">
-    <link href="light.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Nombre de visiteurs</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>changement de couleurs</title>
 </head>
 
-<body>
+<body id="body">
 
-    <input type="text" id="colorInputText" value="255">
-    <button id="btnRouge">Rouge</button>
-    <input type="text" value="0">
-    <button id="btnVert">Vert</button>
-    <input type="text" value="0">
-    <button id="btnBleu">Bleu</button>
+    <div class="container">
+        <div class="case" id="rouge">
+            <input type="text" class="rgb" id="rouge" name="rgb" value="255">
+            <button type="submit" class="btnRouge" id="btnRouge">Rouge</button>
+        </div>
+        <div class="case" id="vert">
+            <input type="text" class="rgb" id="vert" name="rgb" value="255">
+            <button type="submit" class="btnVert" id="btnVert">Vert</button>
+        </div>
+        <div class="case" id="bleu">
+            <input type="text" class="rgb" id="bleu" name="rgb" value="255">
+            <button type="submit" class="btnBleu" id="btnBleu">Bleu</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+</html>
