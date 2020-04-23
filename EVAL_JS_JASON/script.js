@@ -40,6 +40,19 @@ function controle(nom){
     if(nom != "capital"){
         chiffre = verifier("capital", document.formulaire.capital.value);
     }
+    if(nom != "taux"){
+        chiffre = verifier("taux", document.formulaire.taux.value);
+    }
+    if(nom != "emprunt"){
+        chiffre = verifier("cemprunt", document.formulaire.emprunt.value);
+    }
+    if(nom != "mensualite"){
+        chiffre = verifier("mensualite", document.formulaire.mensualite.value);
+    }
+    if(nom != "couttotal"){
+        chiffre = verifier("couttotal", document.formulaire.couttotal.value);
+    }
+
 }
 
 function calculmensualite(){
