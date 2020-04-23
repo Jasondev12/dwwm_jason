@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calcul du taux d'intérêt</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1, maximum-scale=1, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Calcul du taux d'intérêt</h1>
+    
+    <form name="formulaire" action="">
+    <div id="sectionPremiere" class="sectionPremiere">
+        <div class="ensembleCapital">
+        <label class="labelCapi" for="capital">Capital Emprunté</label>
+        <input name="capital" id="calcul" class="capital" type="text" /><span>€</span>
+        <p id="erreur" class="erreur">Format incorrect</p>
+        </div>
+
+        <div class="ensembleTauxNominalAnnuel">
+        <label class="labelTaux" for="tauxNominalAnnuel">Taux Nominal Annuel</label>
+        <input name="taux" id="calcul" class="tauxNominalAnnuel" type="text" /><span>%</span>
+        <p class="erreur">Format incorrect</p>
+        </div>
+
+        <div class="ensembleDureeEmprunt">
+        <label class="labelEmprunt" for="dureeEmprunt">Durée d'emprunt</label>
+        <input id="calcul" class="dureeEmprunt" type="text" /><span>Ans</span>
+        <p class="erreur">Format incorrect</p>
+        </div>
+    </div>
+
+    <div class="sectionDeuxieme">
+        <div class="ensembleMensualite">
+        <label class="labelMensu" for="mensualite">Mensualité</label>
+        <input id="mensualite" type="text" /><span>€</span>
+        </div>
+
+        <div class="ensembleCoutTotal">
+        <label class="labelCoutTotal" for="coutTotal">Coût Total</label>
+        <input id="coutTotal" type="text" /><span>€</span>
+        </div>
+    </div>
+
+    <div class="sectionBoutton">
+        <button class="bouttonCalculer" type="submit">Calculer</button>
+        <button class="bouttonNouveauCalcul" type="submit">Nouveau Calcul</button>
+    </div>
+</form>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

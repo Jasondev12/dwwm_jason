@@ -1,7 +1,6 @@
 var paragraphe = document.getElementById("texte");
 var btnReinitialiser = document.getElementById("btnReinitialiser");
 
-
 btnReinitialiser.addEventListener("click", reinitialiser);
 
 valeur = readCookie("nbVisite");
@@ -11,7 +10,6 @@ if (valeur == null) {
 } else {
     valeur++;
     createCookie("nbVisite", valeur, 3);
-
 }
 
 paragraphe.innerHTML = "Nombre de visite: " + valeur;

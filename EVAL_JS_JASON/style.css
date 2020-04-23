@@ -1,0 +1,93 @@
+body{
+    margin: 0 auto;
+    height: 100vh;
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    min-width: 400px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    margin-left: 2%;
+}
+
+/* section 1 */
+.sectionPremiere{
+    display: list-item;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 21vh;
+    border: 1px solid #000;
+    padding-top: 20px;
+}
+
+.ensembleCapital, .ensembleTauxNominalAnnuel, .ensembleDureeEmprunt{
+    width: 80%;
+    display: inline-table;
+    height: 7vh;
+    margin-left: 2%;
+}
+
+.labelCapi, .labelEmprunt{
+    margin-right: 15%;
+}
+
+.labelTaux{
+    margin-right: 10%;
+}
+
+input#calcul, input#tauxNominalAnnuel, input#dureeEmprunt {
+    width: 50%;
+}
+
+/* section 2 */
+.sectionDeuxieme{
+    display: list-item;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 14vh;
+    border: 1px solid #000;
+    padding-top: 20px;
+    margin-top: 10%;
+}
+
+.ensembleMensualite, .ensembleCoutTotal{
+    width: 80%;
+    display: inline-table;
+    height: 7vh;
+    margin-left: 2%;
+}
+
+.labelMensu, .labelCoutTotal{
+    margin-right: 20%;
+}
+
+input#mensualite, input#coutTotal  {
+    width: 50%;
+}
+
+/* seciton boutton */
+
+.sectionBoutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.bouttonCalculer, .bouttonNouveauCalcul{
+    margin-left: 8%;
+    margin-right: 8%;
+}
