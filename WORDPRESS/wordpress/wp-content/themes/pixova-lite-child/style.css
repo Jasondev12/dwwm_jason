@@ -1,0 +1,17 @@
+/*
+Theme Name:   pixova-lite child theme
+Description:  Theme Pixova Child
+Author:       mjason
+Author URL:   http://localhost:8888/DWWM_JASON/WORDPRESS/wordpress
+Template:     pixova-lite
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  pixova-lite-child
+*/
+
+/* Write here your own personal stylesheet */
+
+a.logo {
+    color: red;
+}

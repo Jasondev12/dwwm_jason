@@ -59,7 +59,6 @@ function controle(nom){
     if(nom != "couttotal"){
         chiffre = verifier("couttotal", document.formulaire.couttotal.value);
     }
-
 }
 
 function calculmensualite(){
