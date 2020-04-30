@@ -12,3 +12,10 @@ Text Domain:  pixova-lite-child
 
 /* Write here your own personal stylesheet */
 
+#intro-holder {
+    height: 100vh;
+}
+
+img.image.wp-image-7.attachment-medium.size-medium {
+    border-radius: 50%;
+}
