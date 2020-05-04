@@ -1,0 +1,43 @@
+
+---Downloaded files---
+The import files for: Photograph Free were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://localhost:8888/DWWM_JASON/WORDPRESS/wordpress%202
+Data file = /Applications/MAMP/htdocs/DWWM_JASON/WORDPRESS/wordpress 2/wp-content/plugins/theme-freesia-demo-import/files/dummy/photograph/photograph.wordpress.xml
+Widget file = /Applications/MAMP/htdocs/DWWM_JASON/WORDPRESS/wordpress 2/wp-content/plugins/theme-freesia-demo-import/files/dummy/photograph/photograph-widgets.wie
+Customizer file = /Applications/MAMP/htdocs/DWWM_JASON/WORDPRESS/wordpress 2/wp-content/plugins/theme-freesia-demo-import/files/dummy/photograph/photograph-export.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Main Sidebar : 
+
+Rechercher - No Title - Widget already exists
+Galerie - Latest Photograph - Imported
+photograph_tab_widgets - No Title - Site does not support widget
+
+Side Menu : 
+
+Galerie - Gallery - Imported
+
+Contact Page Sidebar : 
+
+Texte - About Us - Imported
+Texte - Our Address - Imported
+
+Iframe Code For Google Maps : 
+
+HTML personnalisé - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---tf-tfdi/after_import---
+

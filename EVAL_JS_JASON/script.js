@@ -1,68 +1,76 @@
-// VARIABLES
-var capital ; // capital emprunte
-var duree ;  // duree d'emprunt
-var taux ;  // taux mensuel
-var mensualite ;  // mensualite de remboursement
+function verif(event) {
+    // permet de controller la validité d'un champ du formulaire
+    // on recupere l'input sur lequel faire la verification
+    var monInput = event.target;
+    //on recupere les elements correspondant à l'input
+    var message = (monInput.parentNode).getElementsByClassName('erreur')[0];
 
-let input = document.querySelectorAll("#calcul");
-let error = document.querySelectorAll('p');
-
-for (let i = 0; i < input.length; i++) {
-    error[i].style.display = "none";
-  }
-
-// Etape 1 - Verification utilisateur entre un nmbre positif
-function verifier(nom, valeur){
-    i = new Number(0);
-    if (isNaN(valeur) == true){
-        alert("La valeur n'est pas un nombre :" +valeur);
-        return 1;
+    if (monInput.value == '') {
+        // si le champ est vide, on affiche rien
+        message.innerHTML = "Champ manquant";
+        tabErreur[monInput.id] = 0;
+        inputMens.value="";
+        inputCout.value="";
+    } else if (!monInput.checkValidity()) {
+        // force le test du pattern sur l'input
+        message.innerHTML = "Format incorrect";
+        tabErreur[monInput.id] = 0;
+        inputMens.value="";
+        inputCout.value="";
+    } else //if (monInput.checkValidity())
+    {
+        message.innerHTML = "";
+        tabErreur[monInput.id] = 1;
     }
-    if (nom == "taux") {
-        if(valeur <0 ){
-            alert("le taux doit être >= 0%");
-            return 1;
-        }
-        if (valeur > 30){
-            alert("le taux doit être <= 30%");
-            return 1;
-        }
-        else if (nom == "duree"){
-            // durée sup ou egal à 1 mois
-            if (valeur < 1./12.){
-                alert ("la durée doit être > à 1 mois");
-                return 1;
-            }
-            if (valeur >100){
-                alert("la durée doit être <=100 ans");
-                return 1;
-            }
-        }
-    }
-    return 0;
+    verifForm();
 }
 
-function controle(nom){
-    chiffre = new Number(0);
-    if(nom != "capital"){
-        chiffre = verifier("capital", document.formulaire.capital.value);
+function verifForm() {
+    // verifie la validité de tout le formulaire
+    for (var key in tabErreur) {
+        if (tabErreur[key] == 0)
+            return false;
     }
-    if(nom != "taux"){
-        chiffre = verifier("taux", document.formulaire.taux.value);
-    }
-    if(nom != "emprunt"){
-        chiffre = verifier("cemprunt", document.formulaire.emprunt.value);
-    }
-    if(nom != "mensualite"){
-        chiffre = verifier("mensualite", document.formulaire.mensualite.value);
-    }
-    if(nom != "couttotal"){
-        chiffre = verifier("couttotal", document.formulaire.couttotal.value);
+    //lance le calcul
+    calcul();
+    document.getElementById("calcul").disabled=false;
+    return true;
+}
+
+function calcul() {
+    //calcul des mensualité et du cout total
+    var cap = document.getElementById("capitalEmprunte").value;
+    var taux = parseFloat( document.getElementById("tauxNominal").value)/100;
+    var nbMois = document.getElementById("dureeEmprunt").value*12;
+    var mens = parseFloat((cap * taux/12)/(1 - Math.pow(1 + taux/12, -nbMois))).toFixed(2);
+    var cout =parseFloat(mens *nbMois).toFixed(2) ;
+    inputMens.value=mens;
+    inputCout.value=cout;
+    document.getElementById("calcul").addEventListener("click", event =>{
+        alert('Après validation, vos mensualités seront de '+mens+ '€ et le coût total sera de : '+cout+'€');
+    })
+}
+
+function reset(){
+    //remise à 0 des inputs
+    for (i = 0; i < lesInputs.length; i++) {
+        lesInputs[i].value="";
     }
 }
 
-function calculmensualite(){
-    Mensulalite = (capital * taux/12)/(1 - Math.pow(1 + taux/12, -nbMois))
+//on affecte les inputs
+var lesInputs = document.getElementsByTagName("input");
+for (i = 0; i < lesInputs.length; i++) {
+    lesInputs[i].addEventListener("change", verif);
 }
+//on affecte le bouton nouveau calcul
+document.getElementById("reset").addEventListener("click",reset);
 
 
+inputMens = document.getElementById("mensualite");
+inputCout = document.getElementById("coutTotal");
+var tabErreur = { // contient 0 si le champ est en erreur; 1 sinon
+    "capitalEmprunte": 0,
+    "tauxNominal": 0,
+    "dureeEmprunt": 0
+}; 

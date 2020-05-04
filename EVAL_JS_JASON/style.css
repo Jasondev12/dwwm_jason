@@ -45,7 +45,7 @@ span{
     margin-right: 10%;
 }
 
-input#calcul, input#tauxNominalAnnuel, input#dureeEmprunt {
+input#capitalEmprunte, input#dureeEmprunt,input#tauxNominal {
     width: 50%;
 }
 

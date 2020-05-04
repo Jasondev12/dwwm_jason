@@ -15,38 +15,38 @@
     <div id="sectionPremiere" class="sectionPremiere">
         <div class="ensembleCapital">
         <label class="labelCapi" for="capital">Capital Emprunté</label>
-        <input name="capital" id="calcul" class="capital" type="text" /><span>€</span>
-        <p id="erreur" class="erreur">Format incorrect</p>
+        <input name="capital" id="capitalEmprunte" class="capital" type="number" pattern="^[0-9]*$" required /><span>€</span>
+        <p id="erreur" class="erreur"></p>
         </div>
 
         <div class="ensembleTauxNominalAnnuel">
         <label class="labelTaux" for="tauxNominalAnnuel">Taux Nominal Annuel</label>
-        <input name="taux" id="calcul" class="tauxNominalAnnuel" type="text" /><span>%</span>
-        <p class="erreur">Format incorrect</p>
+        <input name="taux" id="tauxNominal" class="dureeEmprunt" type="number" min="0.00" max="100.00" step="0.01" pattern="^[0-9]{1,2}[.,]?[0-9]*$" required /><span>%</span>
+        <p class="erreur"></p>
         </div>
 
         <div class="ensembleDureeEmprunt">
         <label class="labelEmprunt" for="dureeEmprunt">Durée d'emprunt</label>
-        <input name="emprunt" id="calcul" class="dureeEmprunt" type="text" /><span>Ans</span>
-        <p class="erreur">Format incorrect</p>
+        <input name="emprunt" id="dureeEmprunt" class="dureeEmprunt" pattern="^[0-9]{1,2}$" required /><span>Ans</span>
+        <p class="erreur"></p>
         </div>
     </div>
 
     <div class="sectionDeuxieme">
         <div class="ensembleMensualite">
         <label class="labelMensu" for="mensualite">Mensualité</label>
-        <input name="mensualite" id="mensualite" type="text" /><span>€</span>
+        <input name="mensualite" id="mensualite" type="text" disabled /><span>€</span>
         </div>
 
         <div class="ensembleCoutTotal">
         <label class="labelCoutTotal" for="coutTotal">Coût Total</label>
-        <input name="couttotal" id="coutTotal" type="text" /><span>€</span>
+        <input name="couttotal" id="coutTotal" type="text" disabled /><span>€</span>
         </div>
     </div>
 
     <div class="sectionBoutton">
-        <button class="bouttonCalculer" type="submit">Calculer</button>
-        <button class="bouttonNouveauCalcul" type="submit">Nouveau Calcul</button>
+        <button class="bouttonCalculer" id="calcul" disabled>Valider</button>
+        <button class="bouttonNouveauCalcul" id="reset">Nouveau Calcul</button>
     </div>
 </form>
 
