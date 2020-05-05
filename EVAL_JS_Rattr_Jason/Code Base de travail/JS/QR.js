@@ -7,7 +7,7 @@ function verif(event) {
 
     if(monInput.value == ''){
         //si le champ est vide nous affichons
-        message.innerHTML = "Champ manquant";
+        message.innerHTML = "<span style='color:orange'>Champ manquant</span>";
         tabErreur[monInput.id] = 0;
         input1r.value="";
         input2r.value="";
@@ -21,7 +21,7 @@ function verif(event) {
         tabErreur[monInput.id] = 0;
       
     } else {
-        message.innerHTML = "";
+        message.innerHTML = "<span style='color:green'>Bonne réponse</span>";
         lesSolutions[monInput.id] = 1;
     }
     verifForm();
