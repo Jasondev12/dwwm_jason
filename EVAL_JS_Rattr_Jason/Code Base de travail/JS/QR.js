@@ -18,7 +18,7 @@ function verif(event) {
         tabErreur[monInput.id] = 1;
     }
     verifForm();
-}
+};
 
 function verifForm(){
     //  Vérification de la validité de tout le questionnaire
@@ -29,7 +29,7 @@ function verifForm(){
     verification();
     document.getElementById("soumettre").disabled=false;
     return true;
-}
+};
 
 function verification(){
     inputrep1=inputrep1.value;
