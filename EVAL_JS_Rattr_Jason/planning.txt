@@ -1,0 +1,5 @@
+1. Affectaation des inputs
+2. Affectation des évenements des inputs
+3. Affectation des réponses dans une variables 
+comme système des flag avec 0 = false et 1 = true
+4. création des méthodes verif , reset
