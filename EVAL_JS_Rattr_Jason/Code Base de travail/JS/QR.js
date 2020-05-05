@@ -9,20 +9,13 @@ function verif(event) {
         //si le champ est vide nous affichons
         message.innerHTML = "<span style='color:orange'>Champ manquant</span>";
         tabErreur[monInput.id] = 0;
-        input1r.value="";
-        input2r.value="";
-        input3r.value="";
-        input4r.value="";
-        input5r.value="";
-        input6r.value="";
     } else if (!monInput.checkValidity()){
         // force le test du pattern sur l'input
         message.innerHTML = "Format incorrect";
         tabErreur[monInput.id] = 0;
-      
     } else {
         message.innerHTML = "<span style='color:green'>Bonne réponse</span>";
-        lesSolutions[monInput.id] = 1;
+        tabErreur[monInput.id] = 1;
     }
     verifForm();
 }
@@ -39,12 +32,12 @@ function verifForm(){
 }
 
 function verification(){
-    inputrep1.value=input1r;
-    inputrep2value=input2r;
-    inputrep3.value=input3r;
-    inputrep4.value=input4;
-    inputrep5.value=input5r;
-    inputrep6.value=input6r;
+    inputrep1=inputrep1.value;
+    inputrep2=inputrep2.value;;
+    inputrep3=inputrep3.value;;
+    inputrep4=inputrep4.value;
+    inputrep5=inputrep5.value;;
+    inputrep6=inputrep6.value;;
 }
 
 function reset(){
@@ -63,12 +56,12 @@ for (i=0; i < lesInputs.length; i++) {
 // Affectation du bouton efface les réponses
 document.getElementById("reset").addEventListener("click", reset);
 
-input1r = document.getElementById("1r");
-input2r = document.getElementById("2r");
-input3r = document.getElementById("3r");
-input4r = document.getElementById("4r");
-input5r = document.getElementById("5r");
-input6r = document.getElementById("6r");
+inputrep1 = document.getElementById("1r");
+inputrep2 = document.getElementById("2r");
+inputrep3 = document.getElementById("3r");
+inputrep4 = document.getElementById("4r");
+inputrep5 = document.getElementById("5r");
+inputrep6 = document.getElementById("6r");
 
 var tabErreur = {
     "1r": 0,
