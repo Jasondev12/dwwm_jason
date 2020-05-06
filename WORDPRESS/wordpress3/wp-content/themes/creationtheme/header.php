@@ -24,11 +24,14 @@ Explorer 8 -->
 <div class="header">
 <div class="container">
 <nav id="navigation-principale" role="navigation">
-<a class="active" href="#">Accueil</a>
-<a href="#">Services</a>
-<a href="#">À Propos</a>
-<a href="#">Contact</a>
+<?php wp_nav_menu( array( 'theme_location' => 'menu-principal' ) ); ?>
 </nav>
+</div>
+</div>
+<div class="blog-header">
+<h1 class="blog-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo
+get_bloginfo( 'name' ); ?></a></h1>
+<p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
 </div>
 </div>
 <div class="container">

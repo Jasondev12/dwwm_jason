@@ -1,5 +1,9 @@
 /*
-Theme Name: ThemeSimple
+Theme Name: ThemeSimple2
 Author: Louis-Philippe Dea
 Description: Theme simple pour Wordpress
 */
+
+body{
+    background-color: #fbe580;
+}
