@@ -33,11 +33,11 @@ function verifForm(){
 
 function verification(){
     inputrep1=inputrep1.value;
-    inputrep2=inputrep2.value;;
-    inputrep3=inputrep3.value;;
+    inputrep2=inputrep2.value;
+    inputrep3=inputrep3.value;
     inputrep4=inputrep4.value;
-    inputrep5=inputrep5.value;;
-    inputrep6=inputrep6.value;;
+    inputrep5=inputrep5.value;
+    inputrep6=inputrep6.value;
 }
 
 function reset(){
