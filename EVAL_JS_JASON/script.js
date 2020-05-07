@@ -35,7 +35,7 @@ function verifForm() {
     calcul();
     document.getElementById("calcul").disabled=false;
     return true;
-}
+};
 
 function calcul() {
     //calcul des mensualité et du cout total
@@ -49,14 +49,14 @@ function calcul() {
     document.getElementById("calcul").addEventListener("click", event =>{
         alert('Après validation, vos mensualités seront de '+mens+ '€ et le coût total sera de : '+cout+'€');
     })
-}
+};
 
 function reset(){
     //remise à 0 des inputs
     for (i = 0; i < lesInputs.length; i++) {
         lesInputs[i].value="";
     }
-}
+};
 
 //on affecte les inputs
 var lesInputs = document.getElementsByTagName("input");
@@ -73,4 +73,4 @@ var tabErreur = { // contient 0 si le champ est en erreur; 1 sinon
     "capitalEmprunte": 0,
     "tauxNominal": 0,
     "dureeEmprunt": 0
-}; 
+};

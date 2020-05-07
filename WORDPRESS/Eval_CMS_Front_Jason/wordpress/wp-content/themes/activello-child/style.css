@@ -1,0 +1,36 @@
+/*
+Theme Name: Activello Child
+Theme URI: https://colorlib.com/wp/themes/activello/
+Template: activello
+Author: Colorlib
+Author URI: http://colorlib.com
+Description: Activello is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Theme is also multilingual ready and translated in several languages. This awesome blog theme is also SEO friendly helping you to achieve the highest positions on Google. Activello is the only WordPress blog theme you will ever need.
+Tags: blog,entertainment,portfolio
+Version: 1.4.1.1588838247
+Updated: 2020-05-07 09:57:27
+*/
+
+.paragrapheMf {
+    border: 2px solid #781BED;
+    background-color: #ECDCFF;
+    padding: 1em;
+    color: #000;
+}
+
+.paragrapheMfJaune {
+    border-radius: 2em;
+    background-color: #FFF68F;
+    padding: 1em;
+    color: #000;
+}
+
+img.aligncenter.size-medium.wp-image-83 {
+    max-height: 236px;
+    max-width: 236px;
+    min-width: 236px;
+    min-height: 236px;
+}
+
+#sectionAdresse h4 {
+    margin: 0;
+}
