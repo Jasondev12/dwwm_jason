@@ -34,3 +34,17 @@ img.aligncenter.size-medium.wp-image-83 {
 #sectionAdresse h4 {
     margin: 0;
 }
+
+div#sectionAdresse {
+    display: flex;
+}
+
+.formulaire {
+    display: flex;
+    flex: 1;
+}
+
+.divMap {
+    display: inline-table;
+    flex: 1;
+}
