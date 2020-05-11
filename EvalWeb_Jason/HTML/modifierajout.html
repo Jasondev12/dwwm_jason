@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../MEDIAS/CSS/style.css" rel="stylesheet" media="screen" type="text/css" title="Design">
+    <link rel="icon" type="IMAGES/png" href="MEDIAS/IMAGES/faviconafpa.png" />
+</head>
+
+<div class="contenuNouvelleNote">
+    <form action="index.php?action=productionAction" method="POST">
+        <p class="marginNote">
+            <label for="idReference">Elève : </label>
+            <select name="idReference" id="idReference">
+                <option value="'.$reference->getIdReference().'"></option>
+               </select>
+        </p>
+        <p class="marginNote"><label for="quantite">Quantité : </label><input type="text" id="nom" name=",om" placeholder="Nom" required
+                id="nom"></p>
+        <p><a class="bouttonListeModif" href="index.php">Retour</a><button type=submit>Démarrer Production</button></p>
+
+    </form>
+</div>
+</html>

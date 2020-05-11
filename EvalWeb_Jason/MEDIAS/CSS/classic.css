@@ -1,0 +1,332 @@
+body{
+    
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.contenupage{
+  z-index: 0;
+  padding-top: 0vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  overflow-y: auto;
+}
+
+.MessageLog{
+  text-align: center;
+}
+
+.nav{
+  display: flex;
+  border: 1px solid #000;
+  background-color: #f8cbad;
+  color: #000;
+  height: 15vh;
+}
+
+.ensembleTitreMenu {
+    flex: 1;
+    text-align: center;
+}
+
+.site-logo{
+    margin: 1em;
+}
+
+.titrenav{
+    margin-top: 0.6em;
+}
+
+.bouton-nav a{
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background-color: #f2a16a;
+    border: 1px solid #000;
+}
+
+.titreConnexion{
+    text-align: center;
+}
+
+.margeBoutonNav{
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+.bouton-nav {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    margin-right: 2em;
+}
+
+.buttonDeco{
+  margin: 1em;
+}
+
+.modal-dialog {
+    margin-top: 0 !important;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group.text-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+ input.form-control {
+        width: 20vw;
+        height: 4vh;
+    }
+
+    form {
+        font-size: 1.5em;
+        width: 60vw;
+        text-align: center;
+    }
+
+    .input-group {
+        margin-bottom: 2em;
+    }
+
+    .formulaire{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10vh;
+    }
+
+    button.btn.btn-success.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background-color: #f2a16a;
+    border: 1px solid #000;
+}
+
+.texteFooter{
+    height: 10vh;
+    background-color: #f2a16a;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+}
+
+p.texteFooter{
+    border: 1px solid #000;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bouttonListe{
+  border: 1px solid black;
+  color: #000;
+  background-color: #f2a16a;
+  font-weight: 500;
+  font-size: 1.4em;
+  padding: 0.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttonAction{
+  height: 3vh;
+  width: 3vw;
+}
+
+td.bordertd form {
+  height: auto;
+  width: auto;
+  display: inline-flex;
+}
+
+#bouttonListe1{
+  flex: 1;
+  margin-bottom: 2em;
+}
+
+#bouttonListe2{
+  flex: 1;
+}
+
+.ensembleBouttonListe{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+.contenuMenu{
+    height:75vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contenuGestionNotes{
+    margin-top: 2em;
+}
+
+/** TABLEAU **/
+
+.tablehauteur{
+	height: 20rem;
+  overflow-y:scroll;
+}
+
+
+table {
+  overflow: scroll;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin-left: 10%;
+    
+    background-color: rgba(250, 250, 250, 0.5);
+  }
+
+  .titreTh{
+    color: #fff;
+  }
+  
+  #traitTh{
+    border-right: 1px solid black;
+  }
+
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+    color: #000;
+  }
+  
+  tr{
+    border-top: 1px solid black;
+  }
+
+  table thead{
+    border: 1px solid #000;
+    border-bottom: none;
+    color: #000;
+    background-color: #f2a16a ;
+  }
+
+  td.bordertd {
+    border: 1px solid black;
+}
+
+a#submit {
+  margin-bottom: 0.7em;
+}
+
+  button.favorite.styled {
+    margin: 0.2em;
+  }
+
+  #submit {
+    background-color: #FFFF87; /* Green */
+    border: 1px solid #000;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.5em;
+  }
+
+  #submit:hover{
+    text-decoration: underline;
+    color: #337ab7;
+  }
+
+  a.btncentre {
+    font-family: SF-ui, arial, helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    color: red;
+}
+
+.tablehauteur {
+    font-size: 1em;
+    font-family: SF-ui, arial, helvetica, sans-serif;
+}
+  
+  table tr {
+    padding: .35em;
+    border-bottom: 1px solid #0000002b;
+  }
+  
+  table tr:nth-child(even) {
+    background: #f0f0f0;
+  }
+  
+  table tbody tr:hover {
+    background: #fff;
+  }
+  
+  table th,
+  table td {
+    padding: 0.625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: 1.4em;
+    text-transform: uppercase;
+  }
+
+
+  .contenuNouvelleNote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .produitProd{
+    text-decoration: underline;
+  }
+
+.bouttonListeModif{
+  border: 1px solid black;
+    color: #000;
+    background-color: #f2a16a;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 0.15em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    padding: 0px 8px;
+}
+
+a.button{
+  border: 1px solid black;
+    color: #000;
+    background-color: #f2a16a;
+    font-weight: 500;
+    font-size: 1.4em;
+    padding: 0.15em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    padding: 0px 8px;
+}
+

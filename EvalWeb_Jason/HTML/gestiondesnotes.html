@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../MEDIAS/CSS/style.css" rel="stylesheet" media="screen" type="text/css" title="Design">
+    <link rel="icon" type="IMAGES/png" href="MEDIAS/IMAGES/faviconafpa.png" />
+</head>
+
+<body>
+    <!--NAVIGATION-->
+    <div class="nav">
+        <img class="site-logo" src="../MEDIAS/IMAGES/logoafpa.png" alt="">
+        <div class="ensembleTitreMenu">
+            <h1 class="titrenav">Gestion des notes</h1>
+            <h2 class="titrenav">TITRE DE LA PAGE A INSERER</h2>
+        </div>
+
+
+        <div class="bouton-nav">
+            <p class="margeBoutonNav">monnomprenom</p>
+            <p class="margeBoutonNav">mamatiere</p>
+            <a href="index.php?action=deconnexion">Deconnectez-vous</a>
+        </div>
+    </div>
+    <!--MENU-->
+    <div class="contenuGestionNotes">
+        <div class="ensembleBouttonListe">
+            <a class="bouttonListe" id="bouttonListe1" type="submit" href="index.php?action=adminProduitListe">Ajouter une note</a>
+        </div>
+    </div>
+
+<div class="tablehauteur">
+    <table id="tableFormulaire">
+        <thead>
+            <tr>
+                <th class="titreTh" id="traitTh">Nom</th>
+                <th class="titreTh" id="traitTh">Prenom</th>
+                <th class="titreTh" id="traitTh">Note</th>
+                <th class="titreTh">Action</th>
+            </tr>
+        </thead>
+     <tbody>
+            <tr>
+                <td class="bordertd" data-label="idReference">monnom</td>
+                <td class="bordertd" data-label="nomReference">monprenom</td>
+                <td class="bordertd" data-label="nomReference">manote</td>
+                <td class="bordertd" data-label="recapProduction"><a class="boutton" id="submit" type="submit"
+                        href="index.php?action=adminProduitForm&m=modif&id='.$elt->getIdReference().'">action</a>
+                   
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+    <!--FOOTER-->
+    <footer>
+        <p class="texteFooter">Année scolaire 2019-2020</p>
+    </footer>
+
+</body>
