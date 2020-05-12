@@ -16,10 +16,11 @@ qui écrit Hello World', ));
 
         // corps du widget
         $couleur = get_option('helloworld_couleur', 'white');
+        $couleurTitre = get_option('helloworld_couleurTitre', 'white');
         echo '
             <div id="test" style="color: ' . $couleur . '">Hello World est un plug-in qui enregistre
             les commentaires en base de données</div>
-                <h1>Hello World</h1>
+                <h1 id="testCouleurTitre" style="color: ' . $couleurTitre . '">Hello World</h1>
                 <form action="" method="post">         ' .
                 settings_fields('helloworld_settings') . '
                     <p>

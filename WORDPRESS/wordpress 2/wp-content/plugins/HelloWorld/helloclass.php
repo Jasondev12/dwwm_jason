@@ -33,14 +33,15 @@ class HelloClass
     {
         //méthode déclenchée à l'activation du plug-in
         global $wpdb;
-        $wpdb->query("CREATE TABLE IF NOT EXISTS {$wpdb->prefix}helloworld_commentaire (id INT
-        AUTO_INCREMENT PRIMARY KEY, comm VARCHAR(255) NOT NULL);");
+        $wpdb->query("CREATE TABLE IF NOT EXISTS {$wpdb->prefix}helloworld_pseudo (id INT
+        AUTO_INCREMENT PRIMARY KEY, pseudo VARCHAR(255) NOT NULL);");
     }
 
     public static function uninstall()
     {//méthode déclenchée à la suppression du module
     global $wpdb;
     $wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}helloworld_commentaire;");
+    $wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}pseudo;");
     }
     
 
@@ -76,7 +77,6 @@ class HelloClass
     { 
         //on ajoute une page dans le menu administrateur
         add_menu_page('Hello World', 'Hello World plugin', 'manage_options', 'helloworld', array($this, 'menu_html'));
-
     }
 
     public function menu_html()
@@ -84,9 +84,14 @@ class HelloClass
         echo '<h1>'.get_admin_page_title().'</h1>';
         ?>
         <form method="post" action="options.php">
-        <label>Couleur</label>
+        <label>Couleur intitulé widget :</label>
         <input type="text" name="helloworld_couleur" value="<?php echo
         get_option("helloworld_couleur")?>"/>
+
+        <form method="post" action="options.php">
+        <label>Couleur intitulé titre :</label>
+        <input type="text" name="helloworld_couleurTitre" value="<?php echo
+        get_option("helloworld_couleurTitre")?>"/>
         <?php submit_button();
         settings_fields('helloworld_settings'); ?>
         </form>
@@ -96,6 +101,7 @@ class HelloClass
     public function register_settings()
     {
         register_setting('helloworld_settings', 'helloworld_couleur');
+        register_setting('helloworld_settings', 'helloworld_couleurTitre');
     }
 
 }
