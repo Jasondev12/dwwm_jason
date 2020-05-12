@@ -83,7 +83,7 @@ class HelloClass
     {
         echo '<h1>'.get_admin_page_title().'</h1>';
         ?>
-        <form method="post" action="options.php">
+        <form style="display:inline-grid" id="gridForm" method="post" action="options.php">
         <label>Couleur intitulé widget :</label>
         <input type="text" name="helloworld_couleur" value="<?php echo
         get_option("helloworld_couleur")?>"/>

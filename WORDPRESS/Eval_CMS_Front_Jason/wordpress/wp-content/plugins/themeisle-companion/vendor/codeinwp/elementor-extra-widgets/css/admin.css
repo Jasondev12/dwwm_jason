@@ -1,8 +1,9 @@
 .panel-elements-category-title-eaw-elementor-widgets-pro + .panel-elements-category-items .elementor-element {
     position: relative;
 }
+
 .panel-elements-category-title-eaw-elementor-widgets-pro + .panel-elements-category-items .elementor-element:before {
-    content:"PRO";
+    content: "PRO";
     position: absolute;
     background: #b7084e;
     color: #fff;
