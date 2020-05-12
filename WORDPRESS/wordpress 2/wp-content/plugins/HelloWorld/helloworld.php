@@ -11,6 +11,7 @@ class HelloWorld_Plugin
     {
         include_once plugin_dir_path(__FILE__) . '/helloClass.php';
         register_activation_hook(__FILE__, array('helloclass', 'install'));
+        register_deactivation_hook(__FILE__, array('helloclass', 'uninstall'));
         new HelloClass();
         
     }

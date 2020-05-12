@@ -28,6 +28,13 @@ class HelloClass
         AUTO_INCREMENT PRIMARY KEY, comm VARCHAR(255) NOT NULL);");
     }
 
+    public static function uninstall()
+    {//méthode déclenchée à la suppression du module
+    global $wpdb;
+    $wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}helloworld_commentaire;");
+    }
+    
+
     public function save_comm()
     {
         if (isset($_POST['helloworld_comm']) && !empty($_POST['helloworld_comm'])) {
@@ -64,6 +71,7 @@ class HelloClass
     
     public function register_settings()
     {
+        settings_fields('helloworld_settings');
         register_setting('helloworld_settings', 'helloworld_couleur');
     }
 
