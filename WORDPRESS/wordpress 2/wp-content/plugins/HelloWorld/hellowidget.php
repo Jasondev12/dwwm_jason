@@ -23,8 +23,10 @@ qui écrit Hello World', ));
                 <form action="" method="post">         ' .
                 settings_fields('helloworld_settings') . '
                     <p>
+                        <label for="helloworld_pseudo">Votre pseudo :</label>
+                        <input style="color:blue;" id="helloworld_pseudo" name="helloworld_pseudo" type="texte"/>
                         <label for="helloworld_comm">Votre commentaire :</label>
-                        <input id="helloworld_comm" name="helloworld_comm" type="texte"/>
+                        <input style="color:blue;" id="helloworld_comm" name="helloworld_comm" type="texte"/>
                     </p>
                     <input type="submit"/>
                 </form>

@@ -10,6 +10,7 @@ class HelloClass
         add_action('wp_enqueue_scripts', array($this, 'persoCSS'), 15);
         // on ajoute l'action de sauvegarde au chargement du widget
         add_action('wp_loaded', array($this, 'save_comm'));
+        add_action('wp_loaded', array($this, 'save_pseudo'));
         add_action('admin_menu', array($this, 'add_admin_menu'), 20);
         add_action('admin_init', array($this, 'register_settings'));
 
@@ -20,7 +21,15 @@ class HelloClass
         wp_enqueue_style('Hellocss', plugins_url('helloworld/design.css'));
     }
 
-    public static function install()
+    public static function installComment()
+    {
+        //méthode déclenchée à l'activation du plug-in
+        global $wpdb;
+        $wpdb->query("CREATE TABLE IF NOT EXISTS {$wpdb->prefix}helloworld_commentaire (id INT
+        AUTO_INCREMENT PRIMARY KEY, comm VARCHAR(255) NOT NULL);");
+    }
+
+    public static function installPseudo()
     {
         //méthode déclenchée à l'activation du plug-in
         global $wpdb;
@@ -49,6 +58,20 @@ class HelloClass
         }
     }
 
+    public function save_pseudo()
+    {
+        if (isset($_POST['helloworld_pseudo']) && !empty($_POST['helloworld_pseudo'])) {
+            global $wpdb;
+            $pseudo = $_POST['helloworld_pseudo'];
+            $row = $wpdb->get_row("SELECT * FROM {$wpdb->prefix}helloworld_pseudo WHERE pseudo= '$pseudo'");
+
+            if (is_null($row)) {
+                $wpdb->insert("{$wpdb->prefix}helloworld_pseudo", array('pseudo' =>$pseudo));
+
+            }
+        }
+    }
+
     public function add_admin_menu()
     { 
         //on ajoute une page dans le menu administrateur
@@ -64,14 +87,14 @@ class HelloClass
         <label>Couleur</label>
         <input type="text" name="helloworld_couleur" value="<?php echo
         get_option("helloworld_couleur")?>"/>
-        <?php submit_button(); ?>
+        <?php submit_button();
+        settings_fields('helloworld_settings'); ?>
         </form>
         <?php
     }
     
     public function register_settings()
     {
-        settings_fields('helloworld_settings');
         register_setting('helloworld_settings', 'helloworld_couleur');
     }
 
