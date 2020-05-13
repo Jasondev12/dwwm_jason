@@ -6,17 +6,6 @@ Author: Jason
 Version: 1.0
  */
 
-
-include_once plugin_dir_path( __FILE__ ).'/monimagewidget.php';
-
-class monImage
-{
-    public function __construct()
-    {
-        add_action('widgets_init', function(){register_widget('monimageWidget');});
-    }
-}
-
  function changeImage(){
      echo '<div class="image"></div>';
  }
